@@ -1,4 +1,3 @@
-import logoReact from '../assets/react.svg'
 import CartWidget from './CartWidget'
 import ReactIcons from './ReactIcons'
 
@@ -8,8 +7,8 @@ import '../css/Navbar.css'
 const Navbar = () => {
     return (
         <nav className="nav-container">
-            <a className='anchor-nav' href="">
-                <img src={logoReact} alt="logo"/>
+            <a className='logo' href="">
+                <img src="../imgs/whaleLogoBlack.png" alt="logo"/>
             </a>
             <a className='anchor-nav' href="">Recién Llegados</a>
             <a className='anchor-nav' href="">Ofertas!</a>
