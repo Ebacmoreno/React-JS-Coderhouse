@@ -1,7 +1,9 @@
-// import ejemplo desde assets
 import logoReact from '../assets/react.svg'
+import CartWidget from './CartWidget'
+import ReactIcons from './ReactIcons'
+
 //Importar estilos del navbar
-import '../css/NavBar.css'
+import '../css/Navbar.css'
 
 const Navbar = () => {
     return (
@@ -12,9 +14,9 @@ const Navbar = () => {
             <a className='anchor-nav' href="">Recién Llegados</a>
             <a className='anchor-nav' href="">Ofertas!</a>
             <a className='anchor-nav' href="">Best Sellers</a>
-            <a className='anchor-nav' href="">
-                <img src= "vite.svg" alt="carrito" />
-            </a>
+            <ReactIcons.Carrito />
+            <CartWidget />
+
         </nav>
     );
 }
